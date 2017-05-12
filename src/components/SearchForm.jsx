@@ -16,12 +16,14 @@ export class SearchForm extends Component {
           <input type="text" className="search-form_location" defaultValue={this.props.location} onClick={this.props.onLocationSearch}/>
         </label>
         <div>
-          <i className="fa fa-calendar-o" aria-hidden="true"></i>
-          <div className="search-form_start_container">
-            <input type="text" className="start-container_date" defaultValue={searchOptionUtils.getDate(this.props.start_time)}/>
-            <span> at </span>
-            <input type="search" className="start-container_time" defaultValue={searchOptionUtils.getTime(this.props.start_time)}/>
-          </div>
+          <label>
+            <i className="fa fa-calendar-o" aria-hidden="true"></i>
+            <div className="search-form_start_container">
+              <input type="text" className="start-container_date" defaultValue={searchOptionUtils.getDate(this.props.start_time)}/>
+              <span> at </span>
+              <input type="search" className="start-container_time" defaultValue={searchOptionUtils.getTime(this.props.start_time)}/>
+            </div>
+          </label>
           <div className="search-form_end_container">
             <input type="text" className="end-container_date" defaultValue={searchOptionUtils.getDate(this.props.end_time)}/>
             <span> at </span>

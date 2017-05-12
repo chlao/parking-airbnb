@@ -38,9 +38,9 @@ export const getTime = (time) => {
   var AMPMHours = hours % 12;
 
   if (hours > 12){
-    return AMPMHours + ":" + minutes + " PM";
+    return AMPMHours + ":" + minutes + "PM";
   } else{
-    return AMPMHours + ":" + minutes + " AM";
+    return AMPMHours + ":" + minutes + "AM";
   }
 }
 
